@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -x "$(which java)" ] ; then
+	echo running!
+	java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui & 
+else
+	echo Need JRE
+fi
